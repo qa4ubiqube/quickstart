@@ -32,18 +32,16 @@ standaloneInstall(){
 	fi	
 
     docker-compose up -d --build
-
-	docker-compose exec -T msa_dev rm -rf /opt/fmc_repository/Process/Reference
-
-	docker-compose exec -T msa_dev /usr/bin/install_libraries.sh $(getLibOptions)
+    docker-compose exec -T msa_dev rm -rf /opt/fmc_repository/Process/Reference
+    docker-compose exec -T msa_dev /usr/bin/install_libraries.sh $(getLibOptions)
 
     docker-compose restart msa_api
     docker-compose restart msa_sms
-	docker-compose restart msa_alarm
+    docker-compose restart msa_alarm
 	
-	echo "Starting crond on API container msa_api"
-	docker-compose exec -T -u root msa_api crond
-	echo "Done"
+    echo "Starting crond on API container msa_api"
+    docker-compose exec -T -u root msa_api crond
+    echo "Done"
     
     if [ $fresh_setup = false ] ; then
 	    echo "Remove AI ML database. Required on upgrades from 2.4"
@@ -65,28 +63,28 @@ standaloneInstall(){
 
 haInstall(){
 
-	echo "############## Applying last images ##############################"
-	ha_stack=$(docker stack ls --format '{{.Name}}'| head -n 1)
+    echo "############## Applying last images ##############################"
+    ha_stack=$(docker stack ls --format '{{.Name}}'| head -n 1)
 	if [ -z "$ha_stack" ]; then
 		ha_stack="ha"
 		echo "No stack found. Fresh HA installation"
 	fi
-	docker stack deploy --with-registry-auth -c docker-compose.simple.ha.yml $ha_stack
+    docker stack deploy --with-registry-auth -c docker-compose.simple.ha.yml $ha_stack
 	
-	echo "############## Install OpenMSA Libraries ##############################"
-	sleep 5
-	ha_dev_node_ip=$(getHaNodeIp msa_dev)
+    echo "############## Install OpenMSA Libraries ##############################"
+    sleep 5
+    ha_dev_node_ip=$(getHaNodeIp msa_dev)
     ha_dev_container_ref=$(getHaContainerReference msa_dev)
     echo "DEV $ha_dev_ip $ha_dev_container_ref"
     echo "Checking SSH access to DEV container with user $ssh_user on IP $ha_dev_node_ip to install libraries. If failed, please set SSH key"
-	sleep 5
+    sleep 5
     ssh -tt "-o BatchMode=Yes" $ssh_user@$ha_dev_node_ip "docker exec -it $ha_dev_container_ref /bin/bash -c '/usr/bin/install_libraries.sh $(getLibOptions)'"
     docker service update --force "$ha_stack"_msa_api
     docker service update --force "$ha_stack"_msa_sms
-	docker service update --force "$ha_stack"_msa_alarm
+    docker service update --force "$ha_stack"_msa_alarm
 
     echo "############## Start CROND ############################################"
-	ha_api_node_ip=$(getHaNodeIp msa_api)
+    ha_api_node_ip=$(getHaNodeIp msa_api)
     ha_api_container_ref=$(getHaContainerReference msa_api)
     #echo "API $ha_api_ip $ha_api_container_ref"
     #res=$(ssh -tt "-o BatchMode=Yes" $ssh_user@$ha_api_node_ip "docker exec -it -u root $ha_api_container_ref 'ps -edf | crond'")
@@ -106,15 +104,14 @@ haInstall(){
     ha_es_container_ref=$(getHaContainerReference msa_es)
     #echo "ES $ha_es_ip $ha_es_container_ref"
     ssh  -tt $ssh_user@$ha_es_node_ip "docker exec -it -u root -w /home/install/scripts/ $ha_es_container_ref /bin/bash -c './kibana_index_update.sh'"
+    echo "################ Kibana configs & dashboard templates update ##########"
 
-	echo "################ Kibana configs & dashboard templates update ##########"
     ha_kib_node_ip=$(getHaNodeIp msa_kib)
     ha_kib_container_ref=$(getHaContainerReference msa_kib)
     #echo "KIBANA $ha_kib_ip $ha_kib_container_ref"
     waitUpKibana $ha_kib_node_ip
     ssh -tt $ssh_user@$ha_kib_node_ip "docker exec -it -u root -w /home/install/scripts $ha_kib_container_ref /bin/bash -c 'php install_default_template_dash_and_visu.php'"
-
-	echo "Upgrade done!"
+    echo "Upgrade done!"
 }
 
 miniLabCreation(){
