@@ -1,0 +1,32 @@
+﻿!
+ip vrf FAZENDA
+ description VPN FAZENDA - CLIENTE INTRAGOV
+ rd 27699:355650
+ export map EXPORTA-FAZENDA
+ route-target import 27699:355501
+ route-target import 27699:339699
+ route-target import 27699:339799
+ route-target import 27699:327996
+!
+ip vrf INTRAGOV
+ description VPN INTRAGOV - CLIENTE INTRAGOV
+ rd 27699:350150
+ export map EXPORTA-INTRAGOV
+ route-target import 27699:350001
+ route-target import 27699:339699
+ route-target import 27699:339799
+ route-target import 27699:339599
+ route-target import 27699:327998
+ route-target import 27699:327918
+ route-target import 27699:327919
+!
+ip vrf METROPO
+ description VPN METROPO - CLIENTE INTRAGOV
+ rd 27699:355150
+ export map EXPORTA-METROPO
+ route-target import 27699:351501
+ route-target import 27699:339699
+ route-target import 27699:339799
+ route-target import 27699:327996
+ route-target import 10429:102
+!

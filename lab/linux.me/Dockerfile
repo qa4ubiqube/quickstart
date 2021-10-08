@@ -1,6 +1,8 @@
-FROM centos:7
+FROM ubiqube/ubi-centos7:latest
 
-RUN yum install -y redhat-lsb-core openssh-server sudo iptables-services net-snmp net-snmp-utils tcpdump rsyslog
+RUN yum install -y redhat-lsb-core openssh-server sudo iptables-services net-snmp net-snmp-utils tcpdump rsyslog dmidecode && \
+  yum clean all && \
+  rm -rf /var/cache/yum
 
 RUN passwd --stdin root <<< "ubiqube"
 RUN useradd msa
@@ -9,9 +11,9 @@ RUN echo 'msa  ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers
 #RUN echo ':msg, contains, "Time has been changed" ~ ' > /etc/rsyslog.d/time_msgs.conf
 RUN echo '*.* @msa_front' > /etc/rsyslog.d/mini_lab.conf
 
+COPY resources/*.txt /
+
 COPY snmpd.conf /etc/snmp/
-
-RUN systemctl enable sshd
-RUN systemctl enable snmpd
-
-CMD [ "/sbin/init" ]
+COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
+CMD [ "/docker-entrypoint.sh" ]
