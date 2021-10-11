@@ -319,7 +319,7 @@ services:
   adapter_emulator:
     restart: unless-stopped
     container_name: adapter_emulator
-    build: ./lab/linux.me
+    build: ./lab/cisco_ios_xr_emulator
     cap_add:
       - NET_ADMIN
       - NET_RAW
