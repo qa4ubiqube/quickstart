@@ -1,0 +1,55 @@
+!
+route-map EXPORTA-INTRAGOV permit 10
+ match ip address LAN-INTRAGOV
+ set local-preference 200
+ set community 0:10
+ set extcommunity rt  27699:327918 27699:327919 27699:327999
+ set extcommunity rt  27699:339500 27699:350001
+!
+route-map EXPORTA-INTRAGOV permit 20
+ match ip address Lo0-INTRAGOV
+ set extcommunity rt  27699:327918 27699:327919 27699:327999
+ set extcommunity rt  27699:339600 27699:339700 27699:350001
+!
+route-map EXPORTA-INTRAGOV permit 30
+ match ip address WAN-INTRAGOV
+!
+route-map EXPORTA-METROPO permit 10
+ match ip address LAN-METROPO
+ set local-preference 200
+ set extcommunity rt  27699:351501
+!
+route-map EXPORTA-METROPO permit 20
+ match ip address Lo0-METROPO
+ set extcommunity rt  10429:103 27699:339600 27699:339700 27699:351501
+!
+route-map EXPORTA-METROPO permit 30
+ match ip address WAN-METROPO
+!
+route-map EXPORTA-METROPO permit 40
+ match ip address GRE
+ set extcommunity rt  27699:327996
+!
+route-map grey_mgmt_vpn_Telefonica_Empresas_V3372:S_M_Sistemas_Moduladores_ permit 10
+ match ip address V3372:S_M_Sistemas_Moduladores__VPNSC_GREY_MGMT_ACL
+ set extcommunity rt  10429:103 additive
+!
+route-map grey_mgmt_vpn_Telefonica_Empresas_V798:Intermedica_Saude permit 10
+ match ip address V798:Intermedica_Saude_VPNSC_GREY_MGMT_ACL
+ set extcommunity rt  10429:103 additive
+!
+route-map EXPORTA-CEETEPS permit 10
+ match ip address LAN-CEETEPS
+ set extcommunity rt  27699:339500 27699:350501
+!
+route-map EXPORTA-CEETEPS permit 20
+ match ip address Lo0-CEETEPS
+ set extcommunity rt  27699:339600 27699:339700 27699:350501
+!
+route-map EXPORTA-CEETEPS permit 30
+ match ip address WAN-CEETEPS
+!
+route-map EXPORTA-CEETEPS permit 40
+ match ip address GRE
+ set extcommunity rt  27699:327996
+ !

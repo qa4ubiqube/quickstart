@@ -1,0 +1,31 @@
+class-map match-any VoiP
+  match ip dscp cs5  ef 
+  match ip dscp af41  cs5  ef 
+  match ip precedence 4  5 
+class-map match-all FILTRO_BGP
+  match access-group 120
+class-map match-any Multimidia_VPN-IP
+  match ip dscp ef 
+  match ip dscp af41 
+  match ip dscp cs5 
+  match ip dscp cs4 
+class-map match-any Ouro_VPN-IP
+  match ip dscp af31 
+  match ip dscp cs3 
+class-map match-any ITAU-VoIP
+  match ip dscp ef 
+class-map match-any BUSINESS-OURO-FC
+  match  precedence 2  3 
+  match mpls experimental topmost 2  3 
+class-map match-any ABN_VOICE_SIGNALING_FROM_CPE
+  match ip dscp af21 
+class-map match-all ABN_Interativa_Q6
+  match ip dscp af21 
+class-map match-any BUSINESS
+  match mpls experimental topmost 1  2  3  4 
+  match ip precedence 1  2  3  4 
+class-map match-any RT
+  match ip dscp 42  ef 
+class-map match-any NC-REALTIME-FC
+  match  precedence 5  6  7 
+  match mpls experimental topmost 5  6  7 

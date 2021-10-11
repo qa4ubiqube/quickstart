@@ -316,26 +316,6 @@ services:
     volumes:
       - "msa_dev:/opt/devops/"
 
-  adapter_emulator:
-    restart: unless-stopped
-    container_name: adapter_emulator
-    build: ./lab/cisco_ios_xr_emulator
-    cap_add:
-      - NET_ADMIN
-      - NET_RAW
-      - DAC_READ_SEARCH
-      - sys_rawio
-    ports:
-      - "2226:22"
-    devices:                     # required for dmidecode used by polld/asset
-      - "/dev/mem:/dev/mem"
-    networks:
-      default:
-        ipv4_address: 172.20.0.103
-    hostname: adapter_emulator
-    privileged: true
-
-
 volumes:
   msa_api:
   msa_db:

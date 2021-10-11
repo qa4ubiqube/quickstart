@@ -1,4 +1,4 @@
-﻿!
+!
 interface Port-channel1
  description Conexao para a rede do BR_SPO-MB_CV_1 e SPO-MB_ER2_IRL
  ip address 200.207.251.229 255.255.255.252 secondary
@@ -32,3 +32,15 @@ interface Multilink1
  ppp multilink group 1
  no cdp enable
  !
+interface Serial1/0/0.1/1/1/1:0
+ description interface
+ ip vrf forwarding INTRAGOV
+ ip address 201.61.124.105 255.255.255.252
+ no ip redirects
+ no ip proxy-arp
+ encapsulation ppp
+ shutdown
+ no fair-queue
+ no cdp enable
+ service-policy output toCE-0-0-0-1250-600
+!

@@ -15,7 +15,6 @@ First - ensure you have quickstart setup created:
 ```sh
 $ git clone https://github.com/ubiqube/quickstart.git
 $ cd quickstart
-$ sudo docker login
 $ sudo docker-compose up -d
 ```
 

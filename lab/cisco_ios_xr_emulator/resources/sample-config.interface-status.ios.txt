@@ -1,0 +1,534 @@
+Se1/0/0.1/1/1/1:0              admin down     down     interface
+Se1/0/0.1/1/1/2:0              down           down     interface
+Se1/0/0.1/1/1/3:0              admin down     down     
+Se1/0/0.1/1/2/1:1              down           down     interface
+Se1/0/0.1/1/2/1:1.111          admin down     down     Serial1/0/0.1/1/2/1:1.111 fr dlci=111. By VPNSC: Job Id# = 78836 (Dataprev_Salto_411363)
+Se1/0/0.1/1/2/2:0              down           down     PROCURADORIA GERAL_INTRAGOV_ID * 555680 4 M
+Se1/0/0.1/1/2/3:0              down           down     interface
+Se1/0/0.1/1/3/1:0              down           down     interface
+Se1/0/0.1/1/3/2:0              admin down     down     ID*- 06747/06 QT09201904  
+Se1/0/0.1/1/3/3:0              down           down     interface
+Se1/0/0.1/1/4/1:0              down           down     GARBO ID 648067
+Se1/0/0.1/1/4/2:0              admin down     down     00114/05
+Se1/0/0.1/1/4/3:0              admin down     down     interface
+Se1/0/0.1/1/5/1:0              down           down     interface
+Se1/0/0.1/1/5/2:0              down           down     interface
+Se1/0/0.1/1/5/3:0              down           down     TRIBUNAL DE JUSTICA_Braganca Paulista ID 540479
+Se1/0/0.1/1/6/1:1              up             down     interface
+Se1/0/0.1/1/6/2:0              down           down     interface
+Se1/0/0.1/1/6/3:0              down           down     interface
+Se1/0/0.1/1/7/1:0              down           down     IPEM QT07939317
+Se1/0/0.1/1/7/2:0              down           down     interface
+Se1/0/0.1/1/7/3:0              admin down     down     By VPNSC: Job Id# = 176452 (Sabesp_SP_18650_10) 882119
+Se1/0/0.1/2/1/1:0              down           down     KUEHNE+NAGEL SERVICOS LOGISTICOS LTDA ID 723632 
+Se1/0/0.1/2/1/2:0              down           down     interface
+Se1/0/0.1/2/1/3:0              down           down     LINX TELECO_SP_ID 538266
+Se1/0/0.1/2/2/1:0              down           down     By VPNSC: Job Id# = 328985 (Telefonica_Wholesales_Intern_Services_SP_825150)
+Se1/0/0.1/2/2/2:0              down           down     ARCOS DOURADOS COMERCIO DE ALIMENTOS LTDA 399515
+Se1/0/0.1/2/3/1:0              down           down     
+Se1/0/0.1/2/3/2:0              up             up       ID 14202/08
+Se1/0/0.1/2/3/3:0              admin down     down     ULMA BRASIL FORMAS E ESCORAMENTOS LTDA_ID_648834
+Se1/0/0.1/2/4/1:0              down           down     interface
+Se1/0/0.1/2/4/2:0              down           down     interface
+Se1/0/0.1/2/4/3:0              up             down     interface
+Se1/0/0.1/2/5/1:0              admin down     down     TOP DE LINHA AUTO PECAS LTDA_ID_639130
+Se1/0/0.1/2/5/2:0              down           down     interface
+Se1/0/0.1/2/5/3:1              down           down     
+Se1/0/0.1/2/6/1:0              admin down     down     AMWAY DO BRASIL LTDA_SP_id 536845
+Se1/0/0.1/2/6/2:0              admin down     down     By VPNSC: Job Id# = 102482 (Itupetro_Itu_438324)
+Se1/0/0.1/2/6/3:0              down           down     GARBO ID 648068
+Se1/0/0.1/2/7/1:1              down           down     By VPNSC: Job Id# = 103214 (Tng_SP_Rua_Jose_Id_442088)
+Se1/0/0.1/2/7/2:0              admin down     down     Nascimento_Turismo_sp_id_336137
+Se1/0/0.1/2/7/3:0              down           down     Id_ 571269 _ Telesp - Fco Morato
+Se1/0/0.1/3/1/1:0              up             up       By VPNSC: Job Id# = 176159 (Sabesp_Braganca_Paulista_SP_582829)
+Se1/0/0.1/3/1/2:0              admin down     down     00952/06
+Se1/0/0.1/3/1/3:0              down           down     Prodam_ID_00812_07_A
+Se1/0/0.1/3/2/1:0              down           down     Pec_08842
+Se1/0/0.1/3/2/2:0              down           down     Pec_11732
+Se1/0/0.1/3/2/3:0              down           down     interface
+Se1/0/0.1/3/3/1:0              admin down     down     interface
+Se1/0/0.1/3/3/2:0              down           down     By VPNSC: Job Id# = 173770 (KSB_Bombas_Hidraulicas_Barueri_577591)
+Se1/0/0.1/3/3/3:1              down           down     interface
+Se1/0/0.1/3/3/3:1.111          down           down     Serial1/0/0.1/3/3/3:1.111 fr dlci=111. By VPNSC: Job Id# = 216403 (Dataprev_Itatiba_408500)
+Se1/0/0.1/3/4/1:0              down           down     interface
+Se1/0/0.1/3/4/2:0              down           down     interface
+Se1/0/0.1/3/4/3:0              down           down     ARCOS DOURADOS COMERCIO DE ALIMENTOS LTDA 399513
+Se1/0/0.1/3/5/1:0              admin down     down     
+Se1/0/0.1/3/5/2:0              down           down     TELEFONICA BRASIL S.A. ID 717382 
+Se1/0/0.1/3/5/3:0              down           down     interface
+Se1/0/0.1/3/6/1:0              down           down     RH INTERNACIONAL LTDA_SP_id * 551308
+Se1/0/0.1/3/6/2:0              admin down     down     TAV TURISMO_SP_id 500552
+Se1/0/0.1/3/6/3:0              up             up       By VPNSC: Job Id# = 327112 (PM_CAM_NACOES_UNIDAS_SP_793432)
+Se1/0/0.1/3/7/1:0              up             down     TELECOMUNICACOES DE SAO PAULO S.A. - TELESP_ID_565995
+Se1/0/0.1/3/7/2:0              up             up       interface
+Se1/0/0.1/3/7/3:0              down           down     interface Multilink73
+Se1/1/0.1/1/1/1:0              down           down     interface
+Se1/1/0.1/1/1/2:0              down           down     DOW BRASIL S/A - ID 408204
+Se1/1/0.1/1/1/3:0              admin down     down     Id_ 558969 _ SILKIM PARTICIPACOES S.A.
+Se1/1/0.1/1/2/1:0              admin down     down     FACULDADE PE ANCHIETA CAJAMAR LTDA-ID* 597613
+Se1/1/0.1/1/2/2:0              admin down     down     Transporte_Grecco_Maua_308958
+Se1/1/0.1/1/2/3:0              admin down     down     
+Se1/1/0.1/1/3/1:0              admin down     down     By VPNSC: Job Id# = 325991 (Alphafer_Construcoes_Metalicas_824043)
+Se1/1/0.1/1/3/2:0              down           down     
+Se1/1/0.1/1/3/3:0              down           down     Banco_Itau_SP_305647
+Se1/1/0.1/1/3/3:0.111          down           down     Serial1/1/0.1/1/3/3:0.111 fr dlci=111. By VPNSC: Job Id# = 16094 (Banco Itau Florida (SSII_AGSI_))
+Se1/1/0.1/1/4/1:0              down           down     Equipamentos_Cientificos_Instron_814595
+Se1/1/0.1/1/4/2:0              admin down     down     SAO PAULO SECRETARIA DA EDUCACAO_ID_644372
+Se1/1/0.1/1/4/3:0              admin down     down     CIA PROCESSAMENTO DE DADOS DO ESTADO DE S PAULO PRODESP ID 775711 
+Se1/1/0.1/1/5/1:1              admin down     down     
+Se1/1/0.1/1/5/2:0              down           down     interface
+Se1/1/0.1/1/5/3:0              admin down     down     CIA PROCESSAMENTO DE DADOS DO ESTADO DE S PAULO PRODESP_ID_804761
+Se1/1/0.1/1/6/1:0              down           down     By VPNSC: Job Id# = 294111 (Telefonica_Brasil_787216)
+Se1/1/0.1/1/6/2:0              admin down     down     By VPNSC: Job Id# = 346514 (AGV_Logistica_SA_843301)
+Se1/1/0.1/1/6/3:0              admin down     down     SAO PAULO SECRETARIA DA EDUCACAO_ID_644675
+Se1/1/0.1/1/7/1:0              admin down     down     
+Se1/1/0.1/1/7/2:0              admin down     down     IBAPEM - INSTITUTO BRASILEIRO DE APOIO AO PEQUENO EMPRESARIO_sp ID 571479
+Se1/1/0.1/1/7/3:0              admin down     down     IP DED KALUNGA COM IND GRAFICA LP 32073216
+Se1/1/0.1/2/1/1:0              down           down     interface
+Se1/1/0.1/2/1/2:0              admin down     down     
+Se1/1/0.1/2/1/3:0              down           down     
+Se1/1/0.1/2/2/1:0              down           down     HDSP COMERCIO DE VEICULOS_sp ID 538027 "BLQ INADIMPLENCIA.JESSICA TEL 3167-9727 - 17/07/12"
+Se1/1/0.1/2/2/2:0              down           down     interface
+Se1/1/0.1/2/2/3:0              down           down     interface
+Se1/1/0.1/2/3/1:0              admin down     down     ALUMINORTE COMERCIAL DE METAIS LTDA_567198
+Se1/1/0.1/2/3/2:0              down           down     NET_SERV_SPFariaLima_296797
+Se1/1/0.1/2/3/3:0              admin down     down     DUO VIAGENS E TURISMO  ID*  643972
+Se1/1/0.1/2/4/1:0              down           down     TELESP_Campo Limpo Paulista ID 474650 alt vel 577318
+Se1/1/0.1/2/4/2:1              down           down     interface
+Se1/1/0.1/2/4/3:0              down           down     
+Se1/1/0.1/2/5/1:0              admin down     down     HENDRIX GENETICS_SALTO_id * 538042
+Se1/1/0.1/2/5/2:0              down           down     Impacta_Tecno_Eletronica_SPPaulista_308010
+Se1/1/0.1/2/5/3:0              down           down     interface
+Se1/1/0.1/2/6/1:0              down           down     interface
+Se1/1/0.1/2/6/2:1              admin down     down     
+Se1/1/0.1/2/6/3:0              down           down     interface
+Se1/1/0.1/2/7/1:0              down           down     interface
+Se1/1/0.1/2/7/2:0              admin down     down     
+Se1/1/0.1/2/7/3:0              admin down     down     COMPANHIA ADMINISTRADORA DE EMPREENDIMENTOS E SERVICOS ID_797792
+Se1/1/0.1/3/1/1:0              down           down     Serial1/1/0.1/3/1/1:0.111 fr dlci=111. By VPNSC: Job Id# = 20052 (Studio_D_Fashio_SP_317823)
+Se1/1/0.1/3/1/2:0              down           down     TELESP_COTIA_id * 499488 alt vel 575640
+Se1/1/0.1/3/1/3:0              down           down     
+Se1/1/0.1/3/2/1:0              down           down     BANCO ITAU S/A ID:309160
+Se1/1/0.1/3/2/1:0.111          admin down     down     
+Se1/1/0.1/3/2/2:1              admin down     down     
+Se1/1/0.1/3/2/3:0              admin down     down     LUCIANO MOREIRA LEITE_FRANCISCO MORATO_ID* 662731 "BLQ INADIMPLENCIA.JANIELE TEL 3167-9727 - 21/02/13"
+Se1/1/0.1/3/3/1:0              down           down     interface
+Se1/1/0.1/3/3/2:0              admin down     down     
+Se1/1/0.1/3/3/3:0              admin down     down     
+Se1/1/0.1/3/4/1:0              down           down     interface
+Se1/1/0.1/3/4/2:0              admin down     down     ARANTES ALIMENTOS LTDA_JUNDIAI_id 538448
+Se1/1/0.1/3/4/3:0              admin down     down     
+Se1/1/0.1/3/5/1:0              admin down     down     
+Se1/1/0.1/3/5/2:0              admin down     down     
+Se1/1/0.1/3/5/3:0              down           down     By VPNSC: Job Id# = 269239 (TELEFONICA BRASIL S.A.- FRANCO DA ROCHA-SP - ID: 759270)
+Se1/1/0.1/3/6/1:0              down           down     BENICIO ADVOGADOS ASSOCIADOS S/C_ID_601981
+Se1/1/0.1/3/6/2:0              admin down     down     A. TELECOM S/A_11000_32842743_SP_ID 309001
+Se1/1/0.1/3/6/3:0              admin down     down     ID_579290_ PROVIDER INDUSTRIA E COEMRCIO
+Se1/1/0.1/3/7/1:0              admin down     down     By VPNSC: Job Id# = 134202 (Imigrantes_Mercantil_Sao_Paulo_502349)
+Se1/1/0.1/3/7/2:1              admin down     down     CRISBEA COM TRANSPORTE LTDA_SBO_ID 468845
+Se1/1/0.1/3/7/3:0              admin down     down     PREF_MUN_JANDIRA_ID_446989
+Se2/0/0:0                      down           down     interface
+Se2/0/1:0                      admin down     down     By VPNSC: Job Id# = 5126 (LP112034661001192 ID 765006 )
+Se2/0/2:0                      down           down     interface
+Se2/0/3:0                      down           down     TELESP_SP_SA_JUNDIAI_ID 570199
+Se2/0/4:0                      down           down     SAO PAULO TRIBUNAL DE JUSTICA_ID_822766
+Se2/0/5:0                      admin down     down     
+Se2/0/6:0                      down           down     interface
+Se2/0/7:0                      admin down     down     
+Se2/1/0:0                      admin down     down     TRIBUNAL DE JUSTICA_ID*643798
+Se2/1/1:0                      down           down     LUCKSPUMA IND E COM LTDA ID 312807
+Se2/1/2:0                      up             down     interface
+Se2/1/3:0                      down           down     A. TELECOM S/A_GUARULHOS_ID * 550249
+Se2/1/4:0                      admin down     down     
+Se2/1/5:0                      admin down     down     TRIBUNAL-JUSTICA_Cotia ID 612480
+Se2/1/6:0                      admin down     down     SUZANLOG LOGISTICA LTDA ID_585804 "BLQ INADIMPLENCIA.JESSICA 3167-9505 25/05/11"
+Se2/1/7:0                      admin down     down     
+Se2/2/0.1/1/1/1:0              admin down     down     MAFRE 407085
+Se2/2/0.1/1/1/2:1              admin down     down     BV_FINANCEIRA_JUNDIAI_SP_595395
+Se2/2/0.1/1/1/3:0              down           down     interface
+Se2/2/0.1/1/2/1:0              down           down     TELESP -ID_ 569608
+Se2/2/0.1/1/2/2:1              admin down     down     By VPNSC: Job Id# = 103066 (Neotextil_Sp_Sp_Id_449322)
+Se2/2/0.1/1/2/3:1              down           down     ACESP - ASSOCIACAO DE CULTURA E ENSINO SAO PAULO - ID670180
+Se2/2/0.1/1/3/1:1              admin down     down     By VPNSC: Job Id# = 99964 (Casas_Bahia_Comer_Sp_Av_Itaberaba_Id_444007)
+Se2/2/0.1/1/3/2:0              admin down     down     
+Se2/2/0.1/1/3/3:0              admin down     down     By VPNSC: Job Id# = 229471 (Aacd_SPaulo_661530)
+Se2/2/0.1/1/4/1:0              down           down     By VPNSC: Job Id# = 104035 (Hyundai_SP_451852)
+Se2/2/0.1/1/4/2:0              admin down     down     PROCOMP - ID 462166
+Se2/2/0.1/1/4/3:0              up             up       TELESP_SP_SA_JUNDIAI_ID 463373 alt vel 578537
+Se2/2/0.1/1/5/1:1              down           down     By VPNSC: Job Id# = 844306 (CORREIOS_AC_TUIUTI_CENTRO_1453291)
+Se2/2/0.1/1/5/2:0              down           down     By VPNSC: Job Id# = 166403 (Sim_Sistema_Integrado_Rua_Baia_Grande_Id_564019)
+Se2/2/0.1/1/5/3:0              down           down     interface
+Se2/2/0.1/1/6/1:0              up             up       interface
+Se2/2/0.1/1/6/2:1              down           down     By VPNSC: Job Id# = 86281 (Casas_Bahia_Ernest_Renam_420749)
+Se2/2/0.1/1/6/3:0              down           down     interface
+Se2/2/0.1/1/7/1:0              down           down     TELESP_GUARULHOS_id* 566049
+Se2/2/0.1/1/7/2:0              admin down     down     BURNS ESCRIBA sp ID 645333
+Se2/2/0.1/1/7/3:0              down           down     interface
+Se2/2/0.1/2/1/1:0              admin down     down     
+Se2/2/0.1/2/1/2:0              down           down     interface
+Se2/2/0.1/2/1/3:0              down           down     SSII_AVON__VTV_442451_LP_114253609027895
+Se2/2/0.1/2/2/1:0              down           down     
+Se2/2/0.1/2/2/2:0              admin down     down     SAO PAULO SECRETARIA DA EDUCACAO_ID_644385
+Se2/2/0.1/2/2/3:0              down           down     TELESP_Itupeva ID_577320
+Se2/2/0.1/2/3/1:1              down           down     By VPNSC: Job Id# = 224148 (Loccitane_Do_Brasil_Jundiai_Id_644298)
+Se2/2/0.1/2/3/2:0              admin down     down     By VPNSC: Job Id# = 133422 (Hosp_Alemao_Oswaldo_Cruz_Sao_Paulo_499371)
+Se2/2/0.1/2/3/3:0              admin down     down     
+Se2/2/0.1/2/4/1:0              admin down     down     LP_11116_40311053_VTV_483859
+Se2/2/0.1/2/4/2:0              down           down     SSII_AVON_AGSI_36756_VTV_442452_LP_1142536090277
+Se2/2/0.1/2/4/3:0              admin down     down     Id_ 543081 _ FUJIFILM DO BRASIL LTDA
+Se2/2/0.1/2/5/1:0              admin down     down     CRUZACO FUNDICAO MECANICA LTDA_ID_626055 
+Se2/2/0.1/2/5/3:0              admin down     down     By VPNSC: Job Id# = 103607 (RECORD_SP_450101)
+Se2/2/0.1/2/6/1:0              down           down     interface
+Se2/2/0.1/2/6/2:0              admin down     down     Id _ 537832 _ INTERMEAT ASSESSORIA E COMERCIO LTDA
+Se2/2/0.1/2/6/3:1              admin down     down     MARCOS ANTONIO MONTEIRO MOVEIS LTDA 415414
+Se2/2/0.1/2/7/1:0              admin down     down     CMJ COM VEICULOS_SP_ID* 646967
+Se2/2/0.1/2/7/2:0              admin down     down     By VPNSC: Job Id# = 159606 (Sambaiba_Transportes_SP_823963)
+Se2/2/0.1/2/7/3:0              down           down     LP_11116_40311054_VTV_483856
+Se2/2/0.1/3/1/1:0              admin down     down     
+Se2/2/0.1/3/1/2:0              admin down     down     SUNTECH SUPPLIES_SP_id 516263 alt vel id 653366
+Se2/2/0.1/3/1/3:0              down           down     interface
+Se2/2/0.1/3/2/1:0              up             up       TELESP_BRAGANCA_ID 472853 ALT VEL 575063
+Se2/2/0.1/3/2/2:0              down           down     TELESP_JUNDIAI_id 472833 ALT VEL ID* 569959
+Se2/2/0.1/3/2/3:0              down           down     TELECOM S/A IT MIDIA S/A_ ID 660297  BAL 555876 id 641173
+Se2/2/0.1/3/3/1:0              down           down     SSII_AVON_AGSI_36756_VTV_442453_LP_1142536090276
+Se2/2/0.1/3/3/2:0              down           down     interface
+Se2/2/0.1/3/3/3:0              admin down     down     
+Se2/2/0.1/3/4/1:0              admin down     down     
+Se2/2/0.1/3/4/2:0              admin down     down     TRENS METROPOLITANOS_SP_id* 655882
+Se2/2/0.1/3/4/3:0              admin down     down     
+Se2/2/0.1/3/5/1:0              down           down     interface
+Se2/2/0.1/3/5/2:0              down           down     interface
+Se2/2/0.1/3/5/3:0              down           down     interface
+Se2/2/0.1/3/6/1:0              up             up       ENSINO NET LTDA_SP_id 494055 id novo  646077
+Se2/2/0.1/3/6/2:0              admin down     down     
+Se2/2/0.1/3/6/3:0              admin down     down     UNIMED JUNDIAI COOP TRABALHO MEDICO_JUNDIAI_ID 577384
+Se2/2/0.1/3/7/1:0              down           down     IT MIDIA S/A ID 654688
+Se2/2/0.1/3/7/2:1              admin down     down     By VPNSC: Job Id# = 84916 (COOPERATIVA DE CONSUMO COOPERCICA LTDA - JUNDIAI / SP - ID 414448 - RFS N FATURAVEL)
+Se2/2/0.1/3/7/3:0              up             up       Id_ 571853 _ Telesp - JARINU
+Se2/3/0.1/1/1/1:0              down           down     ID_14891/08 - 1
+Se2/3/0.1/1/1/2:0              down           down     ID_14891/08 - 3
+Se2/3/0.1/1/1/3:0              admin down     down     
+Se2/3/0.1/1/2/1:0              admin down     down     
+Se2/3/0.1/1/2/2:0              down           down     interface
+Se2/3/0.1/1/2/3:0              down           down     interface
+Se2/3/0.1/1/3/1:0              down           down     interface
+Se2/3/0.1/1/3/2:0              down           down     interface
+Se2/3/0.1/1/3/3:1              down           down     ID* - 07800/06 QT09220073     
+Se2/3/0.1/1/4/1:0              admin down     down     LATICINIOS SILVESTRE_sp ID 543282
+Se2/3/0.1/1/4/2:0              down           down     ID *15192/08 QT08130649  ac 2                                                           
+Se2/3/0.1/1/4/3:0              admin down     down     ID*-00136/05 QT08121143 
+Se2/3/0.1/1/5/1:1              up             up       interface
+Se2/3/0.1/1/5/2:1              down           down     ID*- 02548/06 QT08111412    
+Se2/3/0.1/1/5/3:1              down           down     ID-04505/06
+Se2/3/0.1/1/6/1:1              up             up       id*- 14923/08 QT09146105
+Se2/3/0.1/1/6/2:0              admin down     down     ID *01822/06   QT09201892            PRODESP - INTRAGOV
+Se2/3/0.1/1/6/3:0              admin down     down     
+Se2/3/0.1/1/7/1:1              down           down     ID*-04687/06 QT08129494    
+Se2/3/0.1/1/7/2:0              admin down     down     By VPNSC: Job Id# = 223402 (Software_Expres_Sao_Paulo_642656)
+Se2/3/0.1/1/7/3:0              down           down     ID EDUCACAO QT08113818 ID 14522/08
+Se2/3/0.1/2/1/1:0              admin down     down     ID 14562/08 QT08115614           PRODESP - INTRAGOV
+Se2/3/0.1/2/1/2:1              admin down     down     ID-05351/06
+Se2/3/0.1/2/1/3:0              down           down     interface
+Se2/3/0.1/2/2/1:0              down           down     interface
+Se2/3/0.1/2/2/2:0              down           down     interface
+Se2/3/0.1/2/2/3:0              down           down     (LP112914666002998) ID: 1629/06
+Se2/3/0.1/2/3/1:0              down           down     POLIPROP EMBALAGENS LTDA_SP_id* 641399 bal 650274
+Se2/3/0.1/2/3/2:0              down           down     POLIPROP EMBALAGENS LTDA_SP_id* 641399 bal 650274
+Se2/3/0.1/2/3/3:0              down           down     TELECOMUNICACOES DE SAO PAULO S.A. - TELESP_ID_596238
+Se2/3/0.1/2/4/1:0              down           down     interface
+Se2/3/0.1/2/4/2:0              down           down     interface
+Se2/3/0.1/2/4/3:0              down           down     ID*-15369/08 QT08135667  AC 1 3
+Se2/3/0.1/2/5/1:0              down           down     ID*-15369/08 QT08135667  AC 1 3
+Se2/3/0.1/2/5/2:0              down           down     interface
+Se2/3/0.1/2/5/3:0              down           down     interface
+Se2/3/0.1/2/6/1:0              admin down     down     FREIRE ADVOGADOS E ASSOCIADOS ID 640316 
+Se2/3/0.1/2/6/2:0              admin down     down     ENGEMED SAUDE OCUPACIONAL ID 640283 
+Se2/3/0.1/2/6/3:0              down           down     Trib-Justica id 11973/07 QT08135559 - 12
+Se2/3/0.1/2/7/1:0              down           down     interface
+Se2/3/0.1/2/7/2:0              down           down     interface
+Se2/3/0.1/2/7/3:0              admin down     down     BELLAVANA INDUSTRIA_Cajamar ID 616403
+Se2/3/0.1/3/1/1:0              admin down     down     Id_ 1016010 _ Prodesp - Ministerio Publico de SP
+Se2/3/0.1/3/1/2:0              admin down     down     SSII_000038914_Pacific_Hydro_Sao_Paulo_458644
+Se2/3/0.1/3/1/3:0              down           down     TELESP-ITAPEVI-id* 600155
+Se2/3/0.1/3/2/1:0              down           down     SULZER BRASIL_Jundiai ID 621996
+Se2/3/0.1/3/2/2:0              admin down     down     
+Se2/3/0.1/3/2/3:0              down           down     description SULZER BRASIL_Jundiai ID 621997
+Se2/3/0.1/3/3/1:0              down           down     Id_ 496745 TELESP SA
+Se2/3/0.1/3/3/2:1              admin down     down     
+Se2/3/0.1/3/3/3:1              admin down     down     
+Se2/3/0.1/3/4/1:0              admin down     down     By VPNSC: Job Id# = 217395 (Contem_1G_Sao_Paulo_630283)
+Se2/3/0.1/3/4/2:0              admin down     down     MEGGA TECNOLOGIA_Bairro Jacare ID 579688
+Se2/3/0.1/3/4/3:0              down           down     SSII_AVON_AGSI_36757_VTV_442454_LP_5686-2981
+Se2/3/0.1/3/5/1:0              down           down     SSII_AVON_AGSI_36757_VTV_442455_LP_5686-2977
+Se2/3/0.1/3/5/2:0              down           down     SSII_AVON_AGSI_36757_VTV_442456_LP_5686-2976
+Se2/3/0.1/3/5/3:0              down           down     SSII_AVON_AGSI_36757_VTV_442457_LP_5686-2978
+Se2/3/0.1/3/6/1:0              admin down     down     SAO PAULO SECRETARIA DA EDUCACAO_ID_665774 
+Se2/3/0.1/3/6/2:0              admin down     down     
+Se2/3/0.1/3/6/3:0              admin down     down     BRASFANTA INDUSTRIA E COMERCIO_sp ID 530319
+Se2/3/0.1/3/7/1:0              admin down     down     AUDILAB LTDA - ID489343
+Se2/3/0.1/3/7/2:1              down           down     interface
+Se2/3/0.1/3/7/3:0              admin down     down     By VPNSC: Job Id# = 216751 (Sabesp_Sp_627937)
+Fa3/1                          down           down     interface
+Fa3/2                          down           down     interface
+Fa3/3                          down           down     interface
+Fa3/4                          down           down     interface
+Fa3/5                          down           down     interface
+Fa3/6                          down           down     interface
+Fa3/7                          down           down     interface
+Fa3/8                          down           down     interface
+Fa3/9                          down           down     interface
+Fa3/10                         down           down     interface
+Fa3/11                         down           down     interface
+Fa3/12                         down           down     interface
+Fa3/13                         down           down     interface
+Fa3/14                         down           down     interface
+Fa3/15                         down           down     interface
+Fa3/16                         down           down     interface
+Fa3/17                         down           down     Conexao com br-spo-mb-sb3-NRP03 (201.0.4.21)
+Fa3/18                         down           down     Conexao com br-spo-mb-sb3-NRP04 (201.0.4.22)
+Fa3/19                         down           down     Conexao com br-spo-mb-sb3-NRP05 (201.0.4.43)
+Fa3/20                         down           down     Conexao com br-spo-mb-sb3-NRP06 (201.0.4.24)
+Fa3/21                         down           down     interface
+Fa3/22                         down           down     interface
+Fa3/23                         down           down     interface
+Fa3/24                         down           down     interface
+Fa3/25                         down           down     interface
+Fa3/26                         down           down     Conexao com br-spo-mb-sb4-NRP05 (201.0.4.30)
+Fa3/27                         down           down     interface
+Fa3/28                         down           down     interface
+Fa3/29                         down           down     Conexao com br-spo-mb-sb5-NRP01 (201.0.4.33)
+Fa3/30                         down           down     Conexao com br-spo-mb-sb5-NRP02 (201.0.4.34)
+Fa3/31                         down           down     Conexao com br-spo-mb-sb5-NRP03 (201.0.4.35)
+Fa3/32                         down           down     Conexao com br-spo-mb-sb5-NRP04 (201.0.4.36)
+Fa3/33                         down           down     interface
+Fa3/34                         down           down     Conexao com br-spo-mb-sb5-NRP06 (201.0.4.38)
+Fa3/35                         down           down     Conexao com br-spo-mb-sb5-NRP07 (201.0.4.39)
+Fa3/36                         admin down     down     interface
+Fa3/37                         up             up       Conexao com i-br-sp-spo-mb-sai-02 FastEthernet0/13
+Fa3/38                         up             up       Conexao com i-br-sp-spo-mb-sai-02 FastEthernet0/14
+Fa3/39                         admin down     down     interface
+Fa3/40                         admin down     down     interface
+Fa3/41                         down           down     Conexao com i-br-sp-spo-am-sai-01 FastEthernet0/15
+Fa3/42                         up             up       Conexao com i-br-sp-spo-am-sai-01 FastEthernet0/16
+Fa3/43                         down           down     interface
+Fa3/44                         down           down     interface
+Fa3/45                         admin down     down     interface
+Fa3/46                         admin down     down     interface
+Fa3/47                         admin down     down     interface
+Fa3/48                         admin down     down     interface
+Gi4/1                          up             up       IP_ULK#1G#c-br-sp-spo-mb-rc-01#Gi0/0/0/3#LOCAL
+Gi4/2                          down           down     Conexao com br-spo-mb-swc2 Gi1/0/23 - Local
+Gi4/3                          down           down     Conexao com br-spo-mb-swc3 Gi1/0/23 - Local
+Gi4/4                          admin down     down     interface
+Gi4/5                          down           down     interface
+Gi4/5.1001                     deleted        down     
+Gi4/6                          admin down     down     interface
+Gi4/7                          admin down     down     interface
+Gi4/8                          up             up       RSPAN
+Gi4/9                          up             up       RSPAN
+Gi4/10                         admin down     down     interface
+Gi4/11                         admin down     down     interface
+Gi4/12                         down           down     interface
+Gi4/13                         down           down     conexao com br-spo-mb-tr01 (8/1/1)
+Gi4/14                         admin down     down     interface
+Gi4/15                         admin down     down     interface
+Gi4/15.3636                    admin down     down     interface
+Gi4/16                         admin down     down     interface
+Gi4/16.3637                    admin down     down     interface
+Se5/0/0.1/1/1/1:0              down           down     
+Se5/0/0.1/1/1/2:0              admin down     down     ID  *13598/07 QT09148902                      
+Se5/0/0.1/1/1/3:0              admin down     down     FATTO TELECOMUNICACOES_sp ID 627788
+Se5/0/0.1/1/2/1:0              down           down     ID *05755/06 QT09148940
+Se5/0/0.1/1/2/2:0              down           down     By VPNSC: Job Id# = 189238 (Yakult_Sao_Paulo_608280)
+Se5/0/0.1/1/2/3:0              admin down     down     SECRETARIA DA EDUCACAO ID 642804
+Se5/0/0.1/1/3/1:0              down           down     15365/08 QT09200436 ac 1 3 4 5
+Se5/0/0.1/1/3/2:0              down           down     15365/08 QT09200436 ac 1 3 4 5
+Se5/0/0.1/1/3/3:0              down           down     15365/08 QT09200436 ac 1 3 4 5
+Se5/0/0.1/1/4/1:0              down           down     15365/08 QT09200436 ac 1 3 4 5
+Se5/0/0.1/1/4/2:0              admin down     down     SEGURANCA PUBLICA INTRAGOV ID 585095
+Se5/0/0.1/1/4/3:0              admin down     down     
+Se5/0/0.1/1/5/1:1              down           down     interface
+Se5/0/0.1/1/5/2:0              down           down     ID- 00363/05 - 1 
+Se5/0/0.1/1/5/3:0              up             up       By VPNSC: Job Id# = 332880 (Telefonica_Wholesales_S_Paulo_SP_820763)
+Se5/0/0.1/1/6/1:1              admin down     down     By VPNSC: Job Id# = 332077 (A.M NETO HOTEL 822845)
+Se5/0/0.1/1/6/2:1              down           down     interface
+Se5/0/0.1/1/6/3:0              down           down     
+Se5/0/0.1/1/7/1:0              down           down     interface
+Se5/0/0.1/1/7/2:1              down           down     Id_ 551733 _ Prodesp - Defensoria Publica de SP
+Se5/0/0.1/1/7/3:0              down           down     interface
+Se5/0/0.1/2/1/1:0              down           down     ID- 00363/05 - 3
+Se5/0/0.1/2/1/2:0              up             up       SAO PAULO SECRETARIA DA SEGURANCA PUBLICA_ID_646311
+Se5/0/0.1/2/1/3:0              admin down     down     By VPNSC: Job Id# = 226088 (Restaurantes_Tournegrill_SP_Id_647180)
+Se5/0/0.1/2/2/1:1              down           down     ID* - 16617/09 QT09225743     
+Se5/0/0.1/2/2/2:0              down           down     By VPNSC: Job Id# = 106597 (Interfile_Gest_Jandira_Id_455409)
+Se5/0/0.1/2/2/3:0              down           down     ARQUITETURA HUMANA BRASIL_sp ID 537030
+Se5/0/0.1/2/3/1:0              down           down     By VPNSC: Job Id# = 106591 (Intrefile_Gest_Jandira_Id_455408)
+Se5/0/0.1/2/3/2:0              down           down     By VPNSC: Job Id# = 106592 (Interfile_Gest_Jandira_Id_455407)
+Se5/0/0.1/2/3/3:0              down           down     APOIO LOGISTICA E SERVICOS_Barueri ID 583337
+Se5/0/0.1/2/4/1:0              down           down     TELESP ITAPECERICA DA SERRA ID 575570
+Se5/0/0.1/2/4/2:0              admin down     down     MERSEN DO BRASIL LTDA. ID 630118
+Se5/0/0.1/2/4/3:0              down           down     interface
+Se5/0/0.1/2/5/1:0              down           down     By VPNSC: Job Id# = 105647 (Viabasil_SP_455192)
+Se5/0/0.1/2/5/2:0              down           down     interface
+Se5/0/0.1/2/5/3:0              admin down     down     By VPNSC: Job Id# = 105408 (Stefanini_Sao_Paulo_454680)
+Se5/0/0.1/2/6/1:0              down           down     By VPNSC: Job Id# = 106629 (Interfile_Jandira_455406)
+Se5/0/0.1/2/6/2:0              down           down     By VPNSC: Job Id# = 105660 (Ed_Guanabara_SP_454896)
+Se5/0/0.1/2/6/3:0              admin down     down     DROGASIL SA - ID 469958
+Se5/0/0.1/2/7/1:0              down           down     interface
+Se5/0/0.1/2/7/2:0              down           down     By VPNSC: Job Id# = 106631 (Interfile_Jandira_455405)
+Se5/0/0.1/2/7/3:0              admin down     down     
+Se5/0/0.1/3/1/1:0              down           down     TELESP_Varzea Paulista ID 523767
+Se5/0/0.1/3/1/2:0              up             up       DROGASIL S/A_SP_id 469952
+Se5/0/0.1/3/1/3:0              admin down     down     
+Se5/0/0.1/3/2/1:0              admin down     down     
+Se5/0/0.1/3/2/2:0              admin down     down     A TELECOM S/A_454693
+Se5/0/0.1/3/2/3:0              down           down     interface
+Se5/0/0.1/3/3/1:0              admin down     down     ORGANIZACAO SOROCABANA DE ASSISTENCIA E CULTURA LTDA ITU id 399591
+Se5/0/0.1/3/3/2:0              down           down     interface
+Se5/0/0.1/3/3/3:0              down           down     interface
+Se5/0/0.1/3/4/1:0              down           down     description TELESP_VARZEA PAULISTA_ID 572140
+Se5/0/0.1/3/4/2:0              down           down     By VPNSC: Job Id# = 119693 (Yakut_Indust_Comercio_SP_Santos_474116)
+Se5/0/0.1/3/4/3:0              admin down     down     JLL CONFECCOES LTDA ID_453637
+Se5/0/0.1/3/5/1:0              admin down     down     ASS ENSINO SOC PROFISSIONALIZANTE_SP_id 472780
+Se5/0/0.1/3/5/2:0              down           down     interface
+Se5/0/0.1/3/5/3:0              down           down     interface
+Se5/0/0.1/3/6/1:0              admin down     down     By VPNSC: Job Id# = 497957 (Lojas_Belian_Modas_Av_Parada_Pinto_1032976)
+Se5/0/0.1/3/6/2:0              down           down     interface
+Se5/0/0.1/3/6/3:0              admin down     down     CLIENTE OPTITEX INDUSTRIA E COMERCIO DE ESTOJOS E BRINDES LTDA ID579708
+Se5/0/0.1/3/7/1:0              admin down     down     By VPNSC: Job Id# = 104375 (Medial_Saude_Diadema_Id_453588)
+Se5/0/0.1/3/7/2:0              down           down     interface
+Se5/0/0.1/3/7/3:0              down           down     interface
+Gi6/1                          admin down     down     interface
+Gi6/2                          up             up       IP_ULK#1G#c-br-sp-spo-jg-rc-01#Gi0/0/0/8#SPO_JG_-SPO_MB_-GBE-0004#Naobalancearoutput:problemaMLS7600
+Gi6/3                          admin down     down     interface
+Gi6/4                          admin down     down     interface
+Gi6/5                          admin down     down     interface
+Gi6/6                          admin down     down     interface
+Gi6/7                          admin down     down     interface
+Gi6/8                          admin down     down     interface
+Gi6/9                          admin down     down     interface
+Gi6/10                         admin down     down     interface
+Gi6/11                         admin down     down     interface
+Gi6/12                         admin down     down     interface
+Gi6/13                         admin down     down     interface
+Gi6/14                         admin down     down     interface
+Gi6/15                         admin down     down     interface
+Gi6/16                         admin down     down     interface
+Gi6/17                         admin down     down     interface
+Gi6/18                         admin down     down     interface
+Gi6/19                         admin down     down     interface
+Gi6/20                         admin down     down     interface
+Gi6/21                         admin down     down     interface
+Gi6/22                         admin down     down     interface
+Gi6/23                         admin down     down     interface
+Gi6/24                         admin down     down     interface
+Gi7/1                          admin down     down     interface
+Gi7/2                          admin down     down     interface
+Gi8/1                          admin down     down     interface
+Gi8/2                          admin down     down     interface
+Lo0                            up             up       Gerencia e IBGP
+MF2                            down           down     interface
+MF4                            down           down     interface
+MF26                           down           down     interface
+MF101                          down           down     interface
+Mu1                            admin down     down     EMAE - EMPRESA METROPOLITANA_Salto ID 618286 4M
+Mu3                            down           down     ID*-14891/08 QT08122746 AC 1 3 4 5 
+Mu4                            admin down     down     By VPNSC: Job Id# = 247137 (Bco_Santander_Sao_Paulo_SP_713438)
+Mu5                            down           down     IPEM QT07939317
+Mu7                            admin down     down     By VPNSC: Job Id# = 26438 (Prodam_ID_00465_07_A)
+Mu8                            down           down     By VPNSC: Job Id# = 26441 (Prodam_ID_00462_07_A)
+Mu9                            down           down     BACKUP 1024KBPS  - By VPNSC: Job Id# = 184567 (BANCO_DO_BRASIL_JARINU_SP_1162354)
+Mu12                           admin down     down     ITU PLAZA HOTEL LTDA ID 688598 
+Mu13                           down           down     By VPNSC: Job Id# = 32402 (Prodam_ID_00812_07_A)
+Mu14                           admin down     down     ARCOS DOURADOS COMERCIO DE ALIMENTOS LTDA 399513 39951
+Mu15                           up             up       By VPNSC: Job Id# = 139542 (Bco_Santander_Cajamar_SP_517616) 691186
+Mu16                           down           down     GLOBEX UTILIDADES S A_BALANCEADO COM ID 417573 / 417574 / 417575 / 417576 / 417577
+Mu17                           down           down     By VPNSC: Job Id# = 82952 (Prodam_Id_02495_08_B)
+Mu18                           down           down     By VPNSC: Job Id# = 83197 (Bco_Banespa_SP_ID_353425_)
+Mu19                           down           down     By VPNSC: Job Id# = 212222 (Kasinski_Fab_Veiculos_Br_Alameda_Limeira_620653_620649)
+Mu20                           down           down     ID*-15377/08 QT08135194 AC 2 4
+Mu21                           down           down     id*-11973/07 QT08135559 ac 2 10 11 
+Mu23                           admin down     down     
+Mu24                           down           down     ID*-15369/08 QT08135667  AC 1 3
+Mu25                           down           down     SSII_AVON_Interlagos_AGSI_36757_VTV_442454_442455_442456_442457 (Avon_Cosmeticos_Sp_442454_442455_442456_442457)
+Mu26                           down           down     By VPNSC: Job Id# = 124055 (Bagley_Brasil_Balanceado_483856_483859)
+Mu27                           admin down     down     By VPNSC: Job Id# = 99563 (Bco_Santander_Sp_441788)
+Mu28                           down           down     PROEVI PROTECAO_sp ID 514896 bal 600798
+Mu29                           down           down     interface
+Mu32                           admin down     down     By VPNSC: Job Id# = 321640 (Bco_Santander_SP_699752)
+Mu33                           down           down     SAO PAULO SECRETARIA DA EDUCACAO_ID_807167
+Mu34                           admin down     down     By VPNSC: Job Id# = 115680 (Banco_Itau_SP_470430)
+Mu36                           down           down     By VPNSC: Job Id# = 103967 (Intermedica_Saude_ID_369592)
+Mu37                           down           down     By VPNSC: Job Id# = 332795 (Itau_Pinheiros_SP_811087)
+Mu38                           admin down     down     15365/08 QT09200436 ac 1 3 4 5
+Mu39                           down           down     interface
+Mu40                           down           down     ID- 00363/05 - 1 - 3
+Mu41                           down           down     By VPNSC: Job Id# = 167938 (Prodam_SP_01_03220_10)
+Mu42                           admin down     down     interface
+Mu43                           down           down     By VPNSC: Job Id# = 148948 (Bco_Santander_SP_723374)
+Mu44                           admin down     down     By VPNSC: Job Id# = 333245 (Bco_Santander_SA_Sta_Marcelina_SP_966945 1318023)
+Mu45                           down           down     By VPNSC: Job Id# = 178482 (Sabesp_SAO_PAULO_SP_582841)
+Mu46                           down           down     By VPNSC: Job Id# = 182537 (Bco_Abn_Real_Sao_Paulo_SP_598100)
+Mu47                           down           down     PROBIOTICA LABORATORIOS_610264 bal 537512
+Mu48                           down           down     STAR TECNOLOGIA EM ILUMINACAO_sp ID 624201 bal 624202
+Mu49                           down           down     interface
+Mu50                           admin down     down     SSII_AVON_Osasco_AGSI_36756_VTV_442451_442452_442453 (Avon_Osasco_Sp_442453)
+Mu51                           admin down     down     By VPNSC: Job Id# = 201618 (Prodam_SP_03388_11_B)
+Mu52                           admin down     down     interface By VPNSC: Job Id# = 616785 (BCO_SANTANDER_AV_LINEU_PRESTES_1185418)
+Mu53                           down           down     interface
+Mu54                           admin down     down     CONSTRUCAP CCPS ENGENHARIA E COMERCIO SA_SP_ID_442106_AC 1 2
+Mu55                           down           down     SANTANDER 710850
+Mu56                           down           down     interface
+Mu57                           down           down     ID-15521/09 - 1 - 3
+Mu58                           down           down     interface
+Mu59                           down           down     
+Mu60                           down           down     interface
+Mu61                           admin down     down     BALANCEAMENTO IDs 455400 455401 455402 455403 455404
+Mu62                           down           down     By VPNSC: Job Id# = 139012 (Banco_Santander_Pedra_Bela_517481)
+Mu63                           down           down     By VPNSC: Job Id# = 182415 (Bco_Abn_R_Rangel_Pestana_SP_597800)
+Mu64                           up             up       By VPNSC: Job Id# = 250720 (Porto_Seguro_SPaulo-688201_1010148_PRINCIPAL)
+Mu65                           down           down     interface
+Mu66                           admin down     down     By VPNSC: Job Id# = 176415 (Sabesp_Braganca_Paulista_SP_722100)
+Mu67                           down           down     interface
+Mu68                           down           down     interface
+Mu69                           admin down     down     description SULZER BRASIL_Jundiai ID 621996 bal 621997
+Mu70                           admin down     down     PROCURADORIA GERAL_INTRAGOV_ID * 555680 4 M
+Mu71                           down           down     A TELECOM S/A_SP_ID_454299
+Mu72                           down           down     interface
+Mu74                           down           down     interface
+Mu75                           down           down     By VPNSC: Job Id# = 135278 (Prodam_Sp_02975_09_B)
+Mu76                           admin down     down     
+Mu77                           down           down     interface
+Mu78                           down           down     SALES INDUSTRIA BALANCEAMETO ID 420301 309103
+Mu80                           up             up       By VPNSC: Job Id# = 182764 (Bco_Brasil_Sp_Id_1163991)
+Mu81                           down           down     interface
+Mu82                           down           down     By VPNSC: Job Id# = 212104 (CBD_Av_Mara_Coelho_Aguiar_Sp_620427)
+Mu83                           admin down     down     By VPNSC: Job Id# = 330332 (SANTANDER_966944)
+Mu84                           admin down     down     PLATINAN FRANQUIAS BALANCEADO ID 642540_643633
+Mu85                           admin down     down     POLIPROP EMBALAGENS LTDA_SP_id* 641399 bal 650274
+Mu86                           admin down     down     By VPNSC: Job Id# = 165592 (Bco_Santander_Av_Corifeu_Marques_Sp_563456)
+Mu87                           admin down     down     CIBAHIA TABACOS_Jandira BALANCEADO ID 649779 649780
+Mu88                           down           down     interface
+Mu89                           down           down     interface
+Mu94                           down           down     QT08135557 - 1 - 7 - 8 - 9
+Mu99                           admin down     down     GARBO ID 648067 bal 648068
+Mu100                          down           down     By VPNSC: Job Id# = 165592 (Bco_Santander_Av_Corifeu_Marques_Sp_563456)
+Mu101                          admin down     down     Construtura_Andrade_GUtierrez_SPGeraldoCampos_307825- config manual ISC fora ! (A_Gutierrez_307825)
+Mu102                          down           down     A
+Mu105                          admin down     down     By VPNSC: Job Id# = 270920 (TRT_ITATIBA_734696_734697)
+Mu1044                         down           down     
+Mu1045                         down           down     interface
+Po1                            up             up       Conexao para a rede do BR_SPO-MB_CV_1 e SPO-MB_ER2_IRL
+Po2                            up             up       Conexao para a rede RAS de BR_SPO-AM_APX_1_2_3 (BR-SPO-AM-LS1)
+Tu0                            up             up       
+Tu1                            up             up       
+Tu2                            up             up       
+Tu3                            up             up       
+Vi1                            down           down     
+Vl1                            admin down     down     interface
+Vl4                            admin down     down     interface
+Vl10                           down           down     conexao com br-spo-mb-tr01 (8/1/1)
+Vl3612                         down           down     INTERFACE VLAN ACESSO - TEMP 
+Vl3614                         admin down     down     INTERFACE VLAN INTERNA
+Vl3618                         down           down     interface
+Vl3621                         down           down     interface

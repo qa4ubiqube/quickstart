@@ -1,0 +1,56 @@
+policy-map  class class-default
+    fair-queue
+     random-detect dscp-based
+policy-map SEBRAE_2048K_VPN-IP_MPLS_VOZ
+  class POLI_Voz_VPN-IP
+    bandwidth 616
+  class POLI_Prata_VPN-IP
+    bandwidth 720
+  class POLI_Platino_VPN-IP
+    bandwidth 408
+  class POLI_Suporte_VPN-IP
+    bandwidth 16
+  class class-default
+     random-detect dscp-based
+policy-map STANDARD_1024K_VPN-IP-PE
+  class Prata_VPN-IP
+    bandwidth 872
+     random-detect dscp-based
+  class Suporte_VPN-IP
+    bandwidth 16
+  class class-default
+    fair-queue
+     random-detect dscp-based
+policy-map ITAU-PE-to-CE-1024-TOIP
+  class ITAU-VoIP
+    priority
+    police cir percent 19 conform-action transmit exceed-action drop
+policy-map POLIIB-toCE-60
+  class NOTSAAIB
+    police cir 60000 bc 1500 be 1500 conform-action set-dscp-transmit af23 exceed-action set-dscp-transmit af13 violate-action set-dscp-transmit af13
+policy-map POLIBLL-toCE-640
+  class NOTSAABLL
+    police 640000 6400 6400 conform-action set-dscp-transmit af22 exceed-action set-dscp-transmit af12 violate-action set-dscp-transmit af12
+policy-map toCE-0-1152-0-640-60
+  class VD
+    priority 1152
+    police cir 1152000 bc 36000 be 36000 conform-action set-dscp-transmit cs5 exceed-action drop violate-action drop
+  class SUP
+    bandwidth 18
+   set dscp cs2
+  class BLL
+    bandwidth 640
+     random-detect dscp-based
+     random-detect dscp 12 53 159 1
+     random-detect dscp 19 596 600 1
+     random-detect dscp 20 596 600 1
+    queue-limit 1200 packets
+   service-policy POLIBLL-toCE-640
+  class IB
+    bandwidth 60
+     random-detect dscp-based
+     random-detect dscp 14 20 60 1
+     random-detect dscp 22 596 600 1
+     random-detect dscp 23 596 600 1
+    queue-limit 1200 packets
+   service-policy POLIIB-toCE-60

@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  adapter_emulator:
+    restart: unless-stopped
+    container_name: adapter_emulator
+    build: .
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - DAC_READ_SEARCH
+      - sys_rawio
+    ports:
+      - "2226:22"
+    devices:                     # required for dmidecode used by polld/asset
+      - "/dev/mem:/dev/mem"
+    networks:
+      default:
+        ipv4_address: 172.20.0.103
+    hostname: adapter_emulator
+    privileged: true
+
+networks:
+  default:
+    name: quickstart_default
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+    driver_opts:
+      encrypted: "true"

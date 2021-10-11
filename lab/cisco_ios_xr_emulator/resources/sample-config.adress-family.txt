@@ -1,0 +1,712 @@
+!
+ address-family ipv4
+  no synchronization
+  redistribute connected route-map CONNECT
+  redistribute static route-map STATIC
+  neighbor to_route_reflector send-community
+  neighbor to_route_reflector next-hop-self
+  neighbor 186.201.244.234 activate
+  neighbor 187.8.71.178 activate
+  neighbor 187.8.71.178 default-originate
+  neighbor 187.8.71.178 remove-private-as
+  neighbor 187.8.71.178 route-map RCV_FROM_187.8.71.178 in
+  neighbor 187.8.71.178 route-map BGP_LIGHT out
+  neighbor 187.8.71.178 maximum-prefix 250 80
+  neighbor 187.50.2.94 activate
+  neighbor 187.50.2.94 default-originate
+  neighbor 187.50.2.94 remove-private-as
+  neighbor 187.50.2.94 route-map RCV_FROM_187.50.2.94 in
+  neighbor 187.50.2.94 route-map BGP_LIGHT out
+  neighbor 187.50.2.94 maximum-prefix 250 80
+  neighbor 189.44.151.54 activate
+  neighbor 200.153.2.3 activate
+  neighbor 200.153.2.21 activate
+  neighbor 200.153.2.35 activate
+  neighbor 200.153.2.59 activate
+  neighbor 200.153.91.230 activate
+  neighbor 200.153.91.230 default-originate
+  neighbor 200.153.91.230 remove-private-as
+  neighbor 200.153.91.230 route-map RCV_FROM_200.153.91.230 in
+  neighbor 200.153.91.230 route-map BGP_LIGHT out
+  neighbor 200.153.91.230 maximum-prefix 250 80
+  no neighbor 200.205.253.42 activate
+  no neighbor 200.205.253.43 activate
+  maximum-paths 8
+  no auto-summary
+ exit-address-family
+ !
+ address-family vpnv4
+  neighbor 200.205.253.42 activate
+  neighbor 200.205.253.42 send-community both
+  neighbor 200.205.253.42 next-hop-self
+  neighbor 200.205.253.43 activate
+  neighbor 200.205.253.43 send-community both
+  neighbor 200.205.253.43 next-hop-self
+ exit-address-family
+ !
+ address-family ipv4 mdt
+  neighbor 200.205.253.42 activate
+  neighbor 200.205.253.42 send-community extended
+  neighbor 200.205.253.43 activate
+  neighbor 200.205.253.43 send-community extended
+ exit-address-family
+ !
+ address-family ipv4 vrf ACESSA-SP
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf CPTM
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf EDUCACAO
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf FAZENDA
+  no synchronization
+  redistribute static route-map static_to_mpBGP
+ exit-address-family
+ !
+ address-family ipv4 vrf INTRAGOV
+  no synchronization
+  redistribute static route-map static_to_mpBGP
+ exit-address-family
+ !
+ address-family ipv4 vrf METROPO
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf PEC
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf PM12
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf PM2
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf PM8
+  no synchronization
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf TRIBUNAL-JUSTICA
+  no synchronization
+  redistribute static
+  neighbor 187.93.7.58 remote-as 65001
+  neighbor 187.93.7.58 activate
+  neighbor 187.93.7.58 as-override
+  neighbor 201.61.124.18 remote-as 65001
+  neighbor 201.61.124.18 activate
+  neighbor 201.61.124.18 as-override
+  neighbor 201.61.124.22 remote-as 65001
+  neighbor 201.61.124.22 activate
+  neighbor 201.61.124.22 as-override
+  neighbor 201.61.124.26 remote-as 65001
+  neighbor 201.61.124.26 activate
+  neighbor 201.61.124.26 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V1038:Bco_Bradesco
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 201.91.172.170 remote-as 65000
+  neighbor 201.91.172.170 activate
+  neighbor 201.91.172.170 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V11011:SSII_SORIN
+  no synchronization
+  redistribute connected
+  neighbor 186.238.126.58 remote-as 65000
+  neighbor 186.238.126.58 activate
+  neighbor 186.238.126.58 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V11548:AGV_Logistica_SA
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V11735:Via_Varejo_Sa
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 186.238.60.58 remote-as 65393
+  neighbor 186.238.60.58 activate
+  neighbor 186.238.60.58 as-override
+  neighbor 187.8.58.46 remote-as 65393
+  neighbor 187.8.58.46 activate
+  neighbor 187.8.58.46 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V1224:Telefonica_inter_Wholesal
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 186.238.126.58 remote-as 65000
+  neighbor 186.238.126.58 activate
+  neighbor 186.238.126.58 as-override
+  neighbor 186.239.103.30 remote-as 65000
+  neighbor 186.239.103.30 activate
+  neighbor 186.239.103.30 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V1267:Interfile_Ltda
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V1271:Bco_Itau_Florida
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V1339:PRODAM
+  no synchronization
+  redistribute connected
+  redistribute static route-map static_to_mpBGP
+  neighbor 201.61.124.98 remote-as 65001
+  neighbor 201.61.124.98 activate
+  neighbor 201.61.124.98 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V1408:Bco_Itau_Atlanta
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 201.91.180.190 remote-as 65015
+  neighbor 201.91.180.190 activate
+  neighbor 201.91.180.190 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V14625:BB_REMUS_III
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 10.255.117.6 remote-as 65415
+  neighbor 10.255.117.6 activate
+  neighbor 10.255.117.6 send-community both
+  neighbor 10.255.117.6 as-override
+  neighbor 10.255.118.26 remote-as 65415
+  neighbor 10.255.118.26 activate
+  neighbor 10.255.118.26 send-community both
+  neighbor 10.255.118.26 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V14646:Lojas_Belian_Modas
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V1600:York_SA_Industria_Com
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V1621:VPN2_Santander_MPLS
+  no synchronization
+  redistribute connected
+  redistribute static route-map Santander_SLA1_2_PRI
+ exit-address-family
+ !
+ address-family ipv4 vrf V1622:VPN3_Santander_MPLS
+  no synchronization
+  redistribute connected
+  redistribute static route-map Santander_SLA1_2_PRI
+ exit-address-family
+ !
+ address-family ipv4 vrf V1630:VPN6_Santander_MPLS
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 189.56.134.178 remote-as 65000
+  neighbor 189.56.134.178 activate
+  neighbor 189.56.134.178 as-override
+  neighbor 189.56.134.178 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 189.56.134.178 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+ exit-address-family
+ !
+ address-family ipv4 vrf V1632:VPN8_Santander_MPLS
+  no synchronization
+  redistribute connected
+  redistribute static route-map Santander_SLA1_2_PRI
+ exit-address-family
+ !
+ address-family ipv4 vrf V1800:REPRESENTACOES_WZ_LTDA
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V1833:Serv_Apoio_Micro_Peq_Emp_
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V185:Arcor_Brasil
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 200.205.225.210 remote-as 65200
+  neighbor 200.205.225.210 activate
+  neighbor 200.205.225.210 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V1930:Bco_Citibank_Sa
+  no synchronization
+  redistribute connected
+  neighbor 200.153.35.110 remote-as 65291
+  neighbor 200.153.35.110 activate
+  neighbor 200.153.35.110 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V2082:ITAU_MPLS
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 186.200.254.62 remote-as 65001
+  neighbor 186.200.254.62 activate
+  neighbor 186.200.254.62 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V2334:Guardiao-Intragov
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V2481:Hyundai_Caoa_do_Brasil_Lt
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V2625:Dataprev-s
+  no synchronization
+  redistribute connected
+  neighbor 10.17.47.238 remote-as 65100
+  neighbor 10.17.47.238 activate
+ exit-address-family
+ !
+ address-family ipv4 vrf V2863:Cooperativa_De_Consumo_Co
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V2892:Associacao_Aacd
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3071:Stefanini_Consult_Informa
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3086:Contem_1_G
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3197:Neotextil_LTDA
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3211:Prodesp_VPN_PMCAM
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3232:Banco_Santander_VPN50
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.9.149.38 remote-as 65038
+  neighbor 187.9.149.38 activate
+  neighbor 187.9.149.38 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V3237:Tng_Prop_Market_Ltda
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3238:Avon_Cosmeticos_Ltda
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.9.51.26 remote-as 64726
+  neighbor 187.9.51.26 activate
+  neighbor 187.9.51.26 as-override
+  neighbor 187.9.51.30 remote-as 64726
+  neighbor 187.9.51.30 activate
+  neighbor 187.9.51.30 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V3243:Imigrantes_Mercantil_Ltda
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3286:Itupetro_Com_Transp_Petro
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3313:Radio_Televisao_Record_SA
+  no synchronization
+  redistribute connected
+  redistribute static route-map RECORD_SA
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V3358:Viabrasil_Ltda
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V3360:Editora_Guanabara_Koogan_
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3459:Pacific_Hydro
+  no synchronization
+  redistribute connected
+  neighbor 187.9.53.166 remote-as 65000
+  neighbor 187.9.53.166 activate
+  neighbor 187.9.53.166 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V3603:HOSPITAL_ALEMAO_OSWALDO_C
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3697:Yakult_SA_Ind_Comercio
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3709:Restaurantes_Tournegrill
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V3802:Kasinski_Fabrica_Veiculos
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V4031:Cia_Informatica_CIJUN
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V4161:Tribunal_Superior_Eleitor
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V4197:PRODAM_AHN_Autarquia
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V4448:BB_REMUSII
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.50.132.90 remote-as 65515
+  neighbor 187.50.132.90 version 4
+  neighbor 187.50.132.90 activate
+  neighbor 187.50.132.90 send-community both
+  neighbor 187.50.132.90 as-override
+  neighbor 187.50.132.90 advertisement-interval 1
+  neighbor 187.50.132.90 allowas-in 1
+  neighbor 187.50.132.90 route-map SetSOO_V4448:BB_REMUSII_65515:15 in
+  neighbor 187.50.132.90 route-map BB-CE-OUT out
+  neighbor 187.50.132.90 maximum-prefix 15
+  neighbor 187.92.53.170 remote-as 65515
+  neighbor 187.92.53.170 version 4
+  neighbor 187.92.53.170 activate
+  neighbor 187.92.53.170 send-community both
+  neighbor 187.92.53.170 as-override
+  neighbor 187.92.53.170 advertisement-interval 1
+  neighbor 187.92.53.170 allowas-in 1
+  neighbor 187.92.53.170 route-map SetSOO_V4448:BB_REMUSII_65515:15 in
+  neighbor 187.92.53.170 route-map BB-CE-OUT out
+ exit-address-family
+ !
+ address-family ipv4 vrf V4815:Sabesp_Intragov
+  no synchronization
+  redistribute connected
+  redistribute static route-map static_to_mpBGP
+ exit-address-family
+ !
+ address-family ipv4 vrf V4833:Ledervin_Indus_E_Comer_Lt
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V4990:Pldevice_Tec_Sitemas_De_C
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V5147:SSII_BV_Financeira
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 200.148.244.138 remote-as 64518
+  neighbor 200.148.244.138 activate
+ exit-address-family
+ !
+ address-family ipv4 vrf V5714:Loccitane_Do_Brasil_SA
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V5796:CBD_Pao_de_acucar-s
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.93.149.6 remote-as 65532
+  neighbor 187.93.149.6 activate
+  neighbor 187.93.149.6 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V6232:Dataprev-s
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 10.17.47.142 remote-as 65100
+  neighbor 10.17.47.142 activate
+  neighbor 10.17.47.142 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V64741:CORREIOS_CONTRATO_101
+  no synchronization
+  redistribute connected route-map RM_ECT_101_CONNECTED
+  redistribute static
+  neighbor 172.17.75.42 remote-as 65011
+  neighbor 172.17.75.42 activate
+  neighbor 172.17.75.42 send-community both
+  neighbor 172.17.75.42 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V6492:Pashal_Locadora_Equipamen
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V705:ITAU_02
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V7515:Porto_Seguro_Nova_Rede
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.93.231.158 remote-as 65000
+  neighbor 187.93.231.158 activate
+  neighbor 187.93.231.158 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V7559:VPN01_Santander_MPLS_NEW
+  no synchronization
+  neighbor 189.20.173.74 remote-as 65069
+  neighbor 189.20.173.74 activate
+  neighbor 189.20.173.74 default-originate route-map ABN_CHECKDEFAULT
+  neighbor 189.20.173.74 as-override
+  neighbor 189.20.173.74 prefix-list ABN_DEFAULTROUTE out
+ exit-address-family
+ !
+ address-family ipv4 vrf V7560:VPN02_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V7561:VPN03_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V7562:VPN04_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 189.56.220.166 remote-as 65000
+  neighbor 189.56.220.166 activate
+  neighbor 189.56.220.166 as-override
+  neighbor 189.56.220.166 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 189.56.220.166 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+ exit-address-family
+ !
+ address-family ipv4 vrf V7564:VPN06_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V7565:VPN07_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 189.180.0.18 remote-as 65000
+  neighbor 189.180.0.18 activate
+  neighbor 189.180.0.18 default-originate route-map ABN_CHECKDEFAULT
+  neighbor 189.180.0.18 as-override
+  neighbor 189.180.0.18 prefix-list ABN_DEFAULTROUTE out
+ exit-address-family
+ !
+ address-family ipv4 vrf V7569:VPN11_Santander_MPLS_NEW
+  no synchronization
+  redistribute connected
+  redistribute static route-map static_to_mpBGP
+  neighbor 186.200.245.66 remote-as 65069
+  neighbor 186.200.245.66 activate
+  neighbor 186.200.245.66 as-override
+  neighbor 186.200.245.66 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 186.200.245.66 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+  neighbor 186.201.244.234 remote-as 65000
+  neighbor 186.201.244.234 activate
+  neighbor 186.201.244.234 as-override
+  neighbor 186.201.244.234 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 186.201.244.234 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+  neighbor 189.20.164.202 remote-as 65069
+  neighbor 189.20.164.202 activate
+  neighbor 189.20.164.202 as-override
+  neighbor 189.20.164.202 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 189.20.164.202 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+  neighbor 189.56.135.226 remote-as 65000
+  neighbor 189.56.135.226 activate
+  neighbor 189.56.135.226 as-override
+  neighbor 189.56.135.226 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 189.56.135.226 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+  neighbor 189.56.187.134 remote-as 65000
+  neighbor 189.56.187.134 activate
+  neighbor 189.56.187.134 as-override
+  neighbor 189.56.187.134 prefix-list SANTANDER_PRAPS_WiMAX_DEFAULT out
+  neighbor 189.56.187.134 route-map SANTANDER_PRAPS_WiMAX_LOCAL_PREF in
+ exit-address-family
+ !
+ address-family ipv4 vrf V795:Medial_Saude_Hospitais
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V798:Intermedica_Saude
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V808:Construtora_Andrade_Gutier
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V8343:TRT_SP_15
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 189.44.151.54 remote-as 65001
+  neighbor 189.44.151.54 activate
+  neighbor 189.44.151.54 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf V912:Bamcaf
+  no synchronization
+  redistribute connected
+  redistribute static
+ exit-address-family
+ !
+ address-family ipv4 vrf V918:Studio_d_Fashion_Camisas_D
+  no synchronization
+  redistribute connected
+  redistribute static
+  default-information originate
+ exit-address-family
+ !
+ address-family ipv4 vrf V951:Banco_Abn_Amro_Real
+  no synchronization
+  redistribute connected
+  redistribute static
+  neighbor 187.92.135.130 remote-as 65069
+  neighbor 187.92.135.130 activate
+  neighbor 187.92.135.130 default-originate route-map ABN_CHECKDEFAULT
+  neighbor 187.92.135.130 prefix-list ABN_DEFAULTROUTE out
+  neighbor 187.92.153.114 remote-as 65033
+  neighbor 187.92.153.114 activate
+  neighbor 187.93.104.82 remote-as 65069
+  neighbor 187.93.104.82 activate
+  neighbor 187.93.104.82 default-originate route-map ABN_CHECKDEFAULT
+  neighbor 187.93.104.82 prefix-list ABN_DEFAULTROUTE out
+  neighbor 189.20.179.150 remote-as 65038
+  neighbor 189.20.179.150 activate
+  neighbor 189.20.179.150 send-community
+  neighbor 189.20.179.150 as-override
+ exit-address-family
+ !
+ address-family ipv4 vrf VPN-TRANSITO
+  no synchronization
+  redistribute static
+ exit-address-family
+!
