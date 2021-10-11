@@ -315,6 +315,26 @@ services:
     hostname: linux_me_2
     privileged: true
 
+  adapter_emulator:
+    restart: unless-stopped
+    container_name: adapter_emulator
+    build: ./lab/linux.me
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - DAC_READ_SEARCH
+      - sys_rawio
+    ports:
+      - "2226:22"
+    devices:                     # required for dmidecode used by polld/asset
+      - "/dev/mem:/dev/mem"
+    networks:
+      default:
+        ipv4_address: 172.20.0.103
+    hostname: adapter_emulator
+    privileged: true
+
+
 volumes:
   msa_api:
   msa_db:
