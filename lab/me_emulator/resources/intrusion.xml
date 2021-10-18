@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectDefinition>
+	<information>
+    <configType>cli</configType>
+    <createTemplateId/>
+    <createTemplateObject/>
+    <defaultDisplay>false</defaultDisplay>
+    <description/>
+    <displayField>object_id</displayField>
+    <dynamic>false</dynamic>
+    <group>Security Profile|Intrusion Protection</group>
+    <icon>/images/repository/CommandDefinition/icons/ips_fortinet.png</icon>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <importonce>false</importonce>
+    <importrank>3</importrank>
+    <maxInstances>0</maxInstances>
+    <name>intrusion</name>
+    <order>2029</order>
+    <relatedObjects/>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>true</sortascending>
+    <sortauto>true</sortauto>
+    <sortnumerical>true</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <visibility>3</visibility>
+  </information>
+	<variables frozen="0">
+    <variable displayName="Sensor Name" displayOrder="0" isMandatory="true" maxLength="320" name="params.object_id" numberOfRowMax="3000" startIncrement="0" type="String"/>
+    <variable displayName="ID" displayOrder="1" isMandatory="true" isUserLocked="true" maxLength="90" name="params.ids.0.id" numberOfRowMax="3000" type="AutoIncrement">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable default="Location Based" displayName="Rule Selector" displayOrder="2" displayType="alt" editable="false" maxLength="200" name="params.ids.0.ruleselector" numberOfRowMax="3000" onlyDetailView="true" startIncrement="0" type="String">
+      <values>
+        <value displayValue="Location Based">Location Based</value>
+        <value displayValue="Specify Signatures">Specify Signatures</value>
+      </values>
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable displayName="Location" displayOrder="3" displayType="alt" maxLength="200" name="params.ids.0.location" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+      <behaviors>
+        <behavior default="all" displayName="location" displayOrder="0" displayType="alt" editable="false" maxLength="200" name="params.ids.0.location" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String">
+          <values>
+            <value displayValue="All">all</value>
+            <value displayValue="Server">server</value>
+            <value displayValue="Client">client</value>
+          </values>
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+        <behavior displayName="location" displayOrder="0" maxLength="200" name="params.ids.0.location" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable displayCols="10" displayName="Severity" displayOrder="4" displayType="alt" maxLength="200" name="params.ids.0.severity.0.val" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="severity" displayOrder="0" displayType="alt" editable="false" isMandatory="true" isMandatoryArray="true" maxLength="200" name="params.ids.0.severity" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String">
+          <values>
+            <value displayValue="All">all</value>
+            <value displayValue="Info">info</value>
+            <value displayValue="Low">low</value>
+            <value displayValue="Medium">medium</value>
+            <value displayValue="High">high</value>
+            <value displayValue="Critical">critical</value>
+          </values>
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+        <behavior displayName="severity" displayOrder="0" maxLength="200" name="params.ids.0.severity" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable displayCols="10" displayName="OS" displayOrder="5" displayType="alt" maxLength="200" name="params.ids.0.os.0.val" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="os" displayOrder="0" displayType="alt" editable="false" isMandatory="true" isMandatoryArray="true" maxLength="200" name="params.ids.0.os" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" tableUniqueValue="true" type="String">
+          <values>
+            <value displayValue="All">all</value>
+            <value displayValue="Other">Other</value>
+            <value displayValue="Windows">Windows</value>
+            <value displayValue="Linux">Linux</value>
+            <value displayValue="BSD">BSD</value>
+            <value displayValue="Solaris">Solaris</value>
+            <value displayValue="MacOS">MacOS</value>
+          </values>
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+        <behavior displayName="os" displayOrder="0" maxLength="200" name="params.ids.0.os" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable displayName="Rule" displayOrder="6" maxLength="200" name="params.ids.0.rule" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="rule" displayOrder="0" maxLength="200" name="params.ids.0.rule" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+          </sections>
+        </behavior>
+        <behavior displayName="Rule" displayOrder="0" isMandatory="true" maxLength="200" name="params.ids.0.rule" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="Integer">
+          <sections>
+            <section>Signature Policy</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable default="default" displayName="Status" displayOrder="7" editable="false" maxLength="200" name="params.ids.0.status" numberOfRowMax="3000" startIncrement="0" type="String">
+      <values>
+        <value displayValue="Default">default</value>
+        <value displayValue="Enable">enable</value>
+        <value displayValue="Disable">disable</value>
+      </values>
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable default="default" displayName="Action" displayOrder="8" editable="false" maxLength="200" name="params.ids.0.action" numberOfRowMax="3000" startIncrement="0" type="String">
+      <values>
+        <value displayValue="Default">default</value>
+        <value displayValue="Block">block</value>
+        <value displayValue="Pass">pass</value>
+      </values>
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable default="enable" displayName="Log Status" displayOrder="9" maxLength="200" name="params.ids.0.log_status" numberOfRowMax="3000" startIncrement="0" type="String" visible="false">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable default="disable" displayName="Log Packet" displayOrder="10" maxLength="200" name="params.ids.0.log_packet" numberOfRowMax="3000" startIncrement="0" type="String" visible="false">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable default="disable" displayName="Log Context" displayOrder="11" maxLength="200" name="params.ids.0.log_context" numberOfRowMax="3000" startIncrement="0" type="String" visible="false">
+      <sections>
+        <section>Signature Policy</section>
+      </sections>
+    </variable>
+    <variable displayName="ID" displayOrder="12" groupDisplayName="Exempt IP" isMandatory="true" isUserLocked="true" maxLength="90" name="params.ids.0.exemptip.0.id" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Exempt IP</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="ID" displayOrder="0" maxLength="200" name="params.ids.0.exemptip.0.id" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false"/>
+        <behavior displayName="ID" displayOrder="0" isMandatory="true" isUserLocked="true" maxLength="200" name="params.ids.0.exemptip.0.id" numberOfRowMax="0" selectorValue="Specify Signatures" type="AutoIncrement"/>
+      </behaviors>
+    </variable>
+    <variable displayName="Src IP Address" displayOrder="13" groupDisplayName="Exempt IP|Src IP" isGrouped="true" maxLength="200" name="params.ids.0.exemptip.0.srcip" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Exempt IP</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="srcip" displayOrder="0" maxLength="200" name="params.ids.0.exemptip.0.srcip" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+            <section>exemptip</section>
+          </sections>
+        </behavior>
+        <behavior displayName="Src IP Address" displayOrder="0" isMandatory="true" maxLength="200" name="params.ids.0.exemptip.0.srcip" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="IpMask"/>
+      </behaviors>
+    </variable>
+    <variable displayName="Src Mask" displayOrder="14" groupDisplayName="Exempt IP|Src IP" groupSeparator="/" isGrouped="true" maxLength="200" name="params.ids.0.exemptip.0.srcmask" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Exempt IP</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="srcmask" displayOrder="0" maxLength="200" name="params.ids.0.exemptip.0.srcmask" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+            <section>exemptip</section>
+          </sections>
+        </behavior>
+        <behavior displayName="Src Mask" displayOrder="0" groupSeparator="/" isMandatory="true" maxLength="200" name="params.ids.0.exemptip.0.srcmask" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="IpMask"/>
+      </behaviors>
+    </variable>
+    <variable displayName="Dst IP Address" displayOrder="15" groupDisplayName="Exempt IP|Dst IP" groupSeparator="/" isGrouped="true" maxLength="200" name="params.ids.0.exemptip.0.dstip" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Exempt IP</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="dstip" displayOrder="0" maxLength="200" name="params.ids.0.exemptip.0.dstip" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>ids</section>
+            <section>exemptip</section>
+          </sections>
+        </behavior>
+        <behavior displayName="Dst IP Address" displayOrder="0" isMandatory="true" maxLength="200" name="params.ids.0.exemptip.0.dstip" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="IpMask">
+          <sections>
+            <section>Exempt IP</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable displayName="Dst Mask" displayOrder="16" groupDisplayName="Exempt IP|Dst IP" groupSeparator="/" isGrouped="true" maxLength="200" name="params.ids.0.exemptip.0.dstmask" numberOfRowMax="3000" selector="params.ids.0.ruleselector" startIncrement="0" type="Composite">
+      <sections>
+        <section>Exempt IP</section>
+      </sections>
+      <behaviors>
+        <behavior displayName="Dst Mask" displayOrder="0" maxLength="200" name="params.ids.0.exemptip.0.dstmask" numberOfRowMax="0" selectorValue="Location Based" startIncrement="0" type="String" visible="false">
+          <sections>
+            <section>Exempt IP</section>
+          </sections>
+        </behavior>
+        <behavior displayName="Dst Mask" displayOrder="0" groupSeparator="/" isMandatory="true" maxLength="200" name="params.ids.0.exemptip.0.dstmask" numberOfRowMax="0" selectorValue="Specify Signatures" startIncrement="0" type="IpMask">
+          <sections>
+            <section>Exempt IP</section>
+          </sections>
+        </behavior>
+      </behaviors>
+    </variable>
+    <variable cols="150" displayName="Comments" displayOrder="17" maxLength="200" name="params.comment" numberOfRowMax="3000" startIncrement="0" type="String"/>
+  </variables>
+	<example>
+    <content>edit "testDMA"
+        set comment "testDMA"
+        set replacemsg-group ''
+            config entries
+                edit 1
+                    set rule 30316
+                    set status default
+                    set log enable
+                    set log-packet disable
+                    set log-attack-context disable
+                    set action default
+                    set quarantine none
+                    set rate-count 0
+                        config exempt-ip
+                            edit 1
+                                set src-ip 192.168.1.167 255.255.255.255
+                                set dst-ip 0.0.0.0 0.0.0.0
+                            next
+                            edit 2
+                                set src-ip 192.168.1.168 255.255.255.255
+                                set dst-ip 0.0.0.0 0.0.0.0
+                            next
+                        end
+                next
+                edit 2
+                    set location all
+                    set severity low 
+                    set protocol all
+                    set os all
+                    set application all
+                    set status default
+                    set log enable
+                    set log-packet disable
+                    set log-attack-context disable
+                    set action default
+                    set quarantine none
+                next
+            end
+    next
+</content>
+  </example>
+
+
+	<command name="IMPORT">
+		<operation>config ips sensor##show full-configuration##end</operation>
+		<parser>
+			<section>
+				<regexp>@edit "(?&lt;object_id&gt;(?!(default|sniffer-profile|wifi-default))[^"]+)"@</regexp>
+			</section>
+			<lines>
+				<line>
+					<array name="ids">
+            <regexp>@config entries@</regexp>
+						<regexp>@edit (?&lt;id&gt;\d+)@</regexp>
+						<lines>
+              <line>
+                <regexp>@set rule (?&lt;rule&gt;\S+)@</regexp>
+              </line>
+              <line>
+                <regexp>@set location (?&lt;location&gt;\S+)@</regexp>
+              </line>
+              <line>
+                <regexp>@set status (?&lt;status&gt;\S+)@</regexp>
+              </line>
+              <line>
+                <regexp>@set log @</regexp>
+              </line>
+              <line>
+                <regexp>@set log-packet @</regexp>
+              </line>
+              <line>
+                <regexp>@set log-attack-context @</regexp>
+              </line>
+              <line>
+                <regexp>@set action (?&lt;action&gt;\S+)@</regexp>
+              </line>
+              <line>
+                <regexp>@set application @</regexp>
+              </line>
+              <line>
+                <regexp>@set protocol @</regexp>
+              </line>
+              <line>
+                <regexp>@set quarantine none@</regexp>
+              </line>
+              <line>
+                <regexp>@set rate-count 0@</regexp>
+              </line>
+              <line>
+                <regexp>@\s{20}end@</regexp>
+              </line>
+              <line>
+                <array name="os">
+                  <mregexp>@set os @</mregexp>
+                  <mregexp>@(?&lt;val&gt;all|Other|Windows|Linux|BSD|Solaris|MacOS)@</mregexp>
+                </array>
+              </line>
+              <line>
+                <array name="severity">
+                  <mregexp>@set severity @</mregexp>
+                  <mregexp>@(?&lt;val&gt;all|info|low|medium|high|critical)@</mregexp>
+                </array>
+              </line>
+							<line>
+								<array name="exemptip">
+								  <regexp>@config exempt-ip@</regexp>
+                    <regexp>@edit (?&lt;id&gt;\d+)@</regexp>
+                    <regexp>@set src-ip (?&lt;srcip&gt;\S+) (?&lt;srcmask&gt;\S+)@</regexp>
+                    <regexp>@set dst-ip (?&lt;dstip&gt;\S+) (?&lt;dstmask&gt;\S+)@</regexp>
+                </array>
+							</line>
+							<ignore>
+							 <regexp>@\s{20}next@</regexp>
+							</ignore>
+              
+              
+						</lines>
+					</array>
+				</line>
+				<line>
+					<regexp>@set comment "(?&lt;comment&gt;.*)"@</regexp>
+				</line>
+        <ignore>
+          <regexp>@config @</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@set @</regexp>
+        </ignore>
+				<ignore>
+					<regexp>@unset @</regexp>
+				</ignore>
+				<ignore>
+					<regexp>@end@</regexp>
+				</ignore>
+				<ignore>
+					<regexp>@\s{10}next@</regexp>
+				</ignore>
+			</lines>
+		</parser>
+		<post_template>{foreach $params.ids as $index =&gt; $idds}
+{if !empty($idds.id)}
+{if empty($idds.rule)}
+{assign_object_variable var="ids.{$index}.ruleselector" value="Location Based"}
+{else}
+{assign_object_variable var="ids.{$index}.ruleselector" value="Specify Signatures"}
+{/if}
+{/if}
+{/foreach}</post_template>
+	</command>
+
+	<command name="CREATE">
+		<operation>config ips sensor
+   edit "{$params.object_id}"
+	set comment "{$params.comment}"
+	set replacemsg-group ''
+	set extended-log enable
+            config entries
+{foreach $params.ids as $index =&gt; $ids}
+                edit {$ids.id}
+{if $ids.ruleselector == "Location Based"}
+                    set location {$ids.location}
+               {if empty($ids.severity)}
+                    set severity all
+               {else}
+               set severity {foreach $ids.severity as $sev}{if $sev.val == "all"} all {break}{else} {$sev.val} {/if}{/foreach}
+                    
+               {/if}
+                    set protocol all
+               {if empty($ids.os)}
+                    set os all
+               {else}
+                    set os {foreach $ids.os as $os}{if $os.val == "all"} all {break}{else} {$os.val} {/if}{/foreach}
+                    
+               {/if}
+                    set application all
+{else}
+                    set rule {$ids.rule}
+                    set rate-count 0
+                        config exempt-ip
+{foreach $ids.exemptip as $exemptip}
+                            edit {$exemptip.id}
+                                set src-ip {$exemptip.srcip} {$exemptip.srcmask}
+                                set dst-ip {$exemptip.dstip} {$exemptip.dstmask}
+                            next
+{/foreach}
+                        end
+{/if}
+                    set status {$ids.status}
+                    set log enable
+                    set log-packet disable
+                    set log-attack-context disable
+                    set action {$ids.action}
+                    set quarantine none
+                next
+{/foreach}
+            end
+    next
+end
+</operation>
+	</command>
+	<command name="UPDATE">
+		<operation>{if ($params.object_id !== "default") &amp;&amp; ($params.object_id !== "IDS_Monitor") &amp;&amp; ($params.object_id !== "IPS_Block")}
+config ips sensor
+edit "{$params.object_id}"
+	set comment "{$params.comment}"
+	set replacemsg-group ''
+	set extended-log enable
+            config entries
+		purge
+{foreach $params.ids as $index =&gt; $ids}
+                edit {$ids.id}
+{if $ids.ruleselector == "Location Based"}
+                    set location {$ids.location}
+               {if empty($ids.severity)}
+                    set severity all
+               {else}
+                 set severity {foreach $ids.severity as $sev}{if $sev.val == "all"} all {break}{else} {$sev.val} {/if}{/foreach}
+                    
+               {/if}
+                    set protocol all
+               {if empty($ids.os)}
+                    set os all
+               {else}
+                    set os {foreach $ids.os as $os}{if $os.val == "all"} all {break}{else} {$os.val} {/if}{/foreach}
+                    
+               {/if}
+
+                    set application all
+{else}
+                    set rule {$ids.rule}
+                    set rate-count 0
+                        config exempt-ip
+			purge
+{foreach $ids.exemptip as $exemptip}
+                            edit {$exemptip.id}
+                                set src-ip {$exemptip.srcip} {$exemptip.srcmask}
+                                set dst-ip {$exemptip.dstip} {$exemptip.dstmask}
+                            next
+{/foreach}
+                        end
+{/if}
+                    set status {$ids.status}
+                    set log enable
+                    set log-packet disable
+                    set log-attack-context disable
+                    set action {$ids.action}
+                    set quarantine none
+                next
+{/foreach}
+            end
+    next
+end
+{/if}
+</operation>
+	</command>
+	<command name="DELETE">
+		<operation>{if ($params.object_id !== "default") &amp;&amp; ($params.object_id !== "IDS_Monitor") &amp;&amp; ($params.object_id !== "IPS_Block")}
+config ips sensor
+delete "{$Intrusion.$object_id.object_id}"
+end
+{/if}
+</operation>
+	</command>
+</ObjectDefinition>

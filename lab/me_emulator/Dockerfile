@@ -10,9 +10,7 @@ RUN passwd --stdin msa <<< "ubiqube"
 RUN echo 'msa  ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers
 #RUN echo ':msg, contains, "Time has been changed" ~ ' > /etc/rsyslog.d/time_msgs.conf
 RUN echo '*.* @msa_front' > /etc/rsyslog.d/mini_lab.conf
-
-COPY resources/*.txt /
-
+COPY resources/* /
 COPY snmpd.conf /etc/snmp/
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
