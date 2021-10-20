@@ -1,0 +1,62 @@
+router isis
+ net 49.0411.0000.28bd.0000.bb64.1c35.0000.00
+ is-type level-1
+ advertise passive-only
+ metric-style wide
+ fast-flood 15
+ ip route priority high tag 10
+ set-overload-bit
+ max-lsp-lifetime 65535
+ lsp-refresh-interval 65000
+ spf-interval 5 1 50
+ prc-interval 5 1 50
+ lsp-gen-interval 5 1 50
+ no hello padding point-to-point
+ log-adjacency-changes
+ nsf cisco
+ redistribute maximum-prefix 4000 80 withdraw
+ passive-interface Loopback0
+ passive-interface Vlan10
+ maximum-paths 8
+ bfd all-interfaces
+!
+router bgp 10429
+ bgp router-id 187.100.28.53
+ no bgp fast-external-fallover
+ bgp log-neighbor-changes
+ bgp graceful-restart restart-time 120
+ bgp graceful-restart stalepath-time 360
+ bgp graceful-restart
+ neighbor to_route_reflector peer-group
+ neighbor to_route_reflector remote-as 10429
+ neighbor to_route_reflector description iBGP com Route Reflector
+ neighbor to_route_reflector password 7 08151F425A1F551943285845287D14
+ neighbor to_route_reflector update-source Loopback0
+ neighbor 186.201.244.234 remote-as 65000
+ neighbor 187.8.71.178 remote-as 64601
+ neighbor 187.8.71.178 description eBGP_com_UNIMED_Jundiai_ID_577384
+ neighbor 187.8.71.178 ebgp-multihop 4
+ neighbor 187.50.2.94 remote-as 65036
+ neighbor 187.50.2.94 description eBGP_com_PROCOMP_ID_462166
+ neighbor 187.50.2.94 ebgp-multihop 4
+ neighbor 187.50.2.94 update-source Serial2/2/0.1/1/4/2:0
+ neighbor 189.44.151.54 remote-as 65001
+ neighbor 200.153.2.3 peer-group to_route_reflector
+ neighbor 200.153.2.3 shutdown
+ neighbor 200.153.2.21 peer-group to_route_reflector
+ neighbor 200.153.2.35 peer-group to_route_reflector
+ neighbor 200.153.2.35 shutdown
+ neighbor 200.153.2.59 peer-group to_route_reflector
+ neighbor 200.153.91.230 remote-as 64601
+ neighbor 200.153.91.230 description eBGP_com_UNIMED_Jundiai_ID_586510
+ neighbor 200.153.91.230 ebgp-multihop 4
+ neighbor 200.153.91.230 update-source Serial2/2/0.1/3/6/3:0
+ neighbor 200.205.253.42 remote-as 10429
+ neighbor 200.205.253.42 description VPN ROUTE REFLECTOR Consolacao
+ neighbor 200.205.253.42 password 7 1331441E580A54247A077C72377423
+ neighbor 200.205.253.42 update-source Loopback0
+ neighbor 200.205.253.43 remote-as 10429
+ neighbor 200.205.253.43 description VPN ROUTE REFLECTOR Ibirapuera
+ neighbor 200.205.253.43 password 7 1331441E580A54247A077C72377423
+ neighbor 200.205.253.43 update-source Loopback0
+ !
